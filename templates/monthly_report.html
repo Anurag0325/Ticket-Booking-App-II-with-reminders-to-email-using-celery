@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Monthly Progress Report</title>
+</head>
+
+<body>
+    <h1>Monthly Progress Report for Month {{ month }}</h1>
+
+    <h2>Bookings</h2>
+    <ul>
+        {% for booking in bookings %}
+        <li>Booking ID: {{ booking.b_id }}</li>
+        <li>Number of Seats Booked: {{ booking.b_seatsbooked }}</li>
+        <li>Show ID: {{ booking.b_show }}</li>
+        <li>Venue ID: {{ booking.vv_id }}</li>
+        <li>User ID: {{ booking.b_user }}</li>
+        <br>
+        {% endfor %}
+    </ul>
+
+    <h2>Shows</h2>
+    <ul>
+        {% for show in shows %}
+        <li>Show ID: {{ show.s_id }}</li>
+        <li>Show Name: {{ show.s_name }}</li>
+        <li>Start Time: {{ show.s_starttime }}</li>
+        <li>End Time: {{ show.s_endtime }}</li>
+        <li>Ratings: {{ show.s_ratings }}</li>
+        <li>Tags: {{ show.s_tags }}</li>
+        <li>Price: {{ show.s_price }}</li>
+        <br>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
