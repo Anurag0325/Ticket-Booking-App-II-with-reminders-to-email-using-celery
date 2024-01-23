@@ -51,19 +51,22 @@ WTForms==3.0.1
 zope.interface==6.0
 
 
-To run main app.py file (Use Ubuntu on Windows)
-(We need for different windows of Ubuntu app)
-First create a local environment and install all the pre-requisites for the project given above in requirements inside the root folder.
-Activate local environment on each windows of ubuntu app 
+To run the main app.py file (Use Ubuntu on Windows)
+
+(We need different windows of Ubuntu app)
+
+First, create a local environment and install all the prerequisites for the project given above in the requirements inside the root folder.
+
+Activate the local environment on each window of the Ubuntu app 
 
 1st ubuntu window
 To run the app.py file use command ==> "python3 app.py" in a local environment mode.
 
 2nd ubuntu window
-Use command "redis-server" to run the redis server in a local environment mode.
+Use the command "redis-server" to run the redis server in a local environment mode.
 
 3rd ubuntu window
-Use command "celery -A app.celery worker --loglevel=INFO" to run celery worker in a local environment mode.
+Use the command "celery -A app.celery worker --loglevel=INFO" to run celery worker in a local environment mode.
 
 4th ubuntu window
-Use command "celery -A app.celery beat --max-level 2 -l info" torun celery beat in a local environment mode.
+Use the command "celery -A app.celery beat --max-level 2 -l info" to run celery beat in a local environment mode.
